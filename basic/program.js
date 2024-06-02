@@ -16,5 +16,10 @@ var daylist = [
 var h = date.getHours();
 var min = date.getMinutes();
 var sec = date.getSeconds();
+var prepand = h >= 12 ? " PM " : " AM ";
+h = h >= 12 ? h - 12 : h;
+console.log(h);
+console.log(prepand);
+
 console.log(`Today is  :  ${daylist[day]}`);
-console.log(`Current Time : ${h}h - ${min}min - ${sec} sec`);
+console.log(`Current Time : ${h}h-${prepand} - ${min} min - ${sec} sec`);
