@@ -27,3 +27,5 @@ while (index < array.length) {
   console.log(array[index]);
   index++;
 }
+
+

@@ -1,5 +1,13 @@
 // The every() method checks if all array values pass a test.
 
+// Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+
+
+// true or false
 const x = 0;
 const numbers = [1, 2, 34, 4, 5, 6, 7, 8];
 
