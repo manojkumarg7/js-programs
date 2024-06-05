@@ -16,6 +16,7 @@ const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduce(myFunction);
 
 function myFunction(total, value, index, array) {
+  //total -45  value -4
   return total + value;
 }
 
@@ -28,3 +29,29 @@ function test(initailValue, value, index, array) {
 
 const total = num.reduce(test);
 console.log(total);
+
+// example 3 reduce(accumalator ,current )
+const a = [
+  {
+    id: 1,
+    name: "manoj",
+    price: 10,
+  },
+  {
+    id: 2,
+    name: "manoj",
+    price: 10,
+  },
+  {
+    id: 3,
+    name: "manoj",
+    price: 10,
+  },
+];
+
+var g = a.reduce((accumulator, current) => {
+  return (accumulator += current.price);
+}, 0);
+
+//   if u change tha call back value you can see the difference
+console.log(g);
