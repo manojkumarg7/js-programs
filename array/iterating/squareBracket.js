@@ -65,3 +65,28 @@ const obj4 = {
 
 console.log(obj4["first name"]); // Output: 'John'
 console.log(obj4["last name"]); // Output: 'Doe'
+
+//
+
+// . opertaor used for static values  [] used for dynamic keys values
+var a = {
+  name: "manoj",
+  price: 8990,
+  langauage: "java",
+  amount:200,
+  mill:[1,2,3,4]
+
+};
+
+console.log(a["mill"][0]);
+
+var mykey="price";
+a[20 > 11?"successs":"failed"]=300;// we use [] for expressions also
+
+a[mykey]=100;
+a["name"]="arjun";// dynamic values 
+console.log(a);
+
+
+console.log(a.name);
+console.log(a['name']);
