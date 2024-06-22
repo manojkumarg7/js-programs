@@ -1,19 +1,20 @@
-let myPromise = new Promise((resolve, reject) => {
-  // Asynchronous operation (e.g., fetching data from an API)
-  setTimeout(() => {
-    let success = true; // Simulate success or failure
-    if (success) {
-      resolve("Data successfully fetched!"); // Resolve with a value
-    } else {
-      reject("Error fetching data."); // Reject with an error
-    }
-  }, 2000); // Simulate delay of 2 seconds
+// 1
+const promise1 = new Promise(function (resolve, reject) {
+  const a = 10;
+  const b = 101;
+  if (a === b) {
+    resolve("success");
+  } else {
+    reject("failed");
+  }
 });
 
-myPromise
-  .then((result) => {
-    console.log(result); // Output: Data successfully fetched!
+promise1
+  .then(function (l) {
+    console.log(l);
   })
-  .catch((error) => {
-    console.error(error); // Output: Error fetching data.
+  .catch(function (err) {
+    console.log(err);
   });
+
+// 2
