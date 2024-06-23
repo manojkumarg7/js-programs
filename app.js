@@ -1,11 +1,20 @@
-let json = { age: "24" };
-
-try {
-  let user = JSON.parse(json);
-  if (!user.name) {
-    throw new SyntaxError("Incomplete Data :no name");
-  }
-  console.log(user.name);
-} catch (err) {
-  console.log("Json Error : " + err); //name ,message ,stack
+function test(callback) {
+  console.log("func1");
+  setTimeout(() => {
+    callback(); // Call the callback function after some delay
+  }, 3000); //
 }
+
+function disp() {
+  console.log("func2");
+  run();
+}
+function run() {
+  console.log("func3");
+  main();
+}
+function main() {
+  console.log("func4");
+}
+
+test(disp);
