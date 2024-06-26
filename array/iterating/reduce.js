@@ -12,6 +12,10 @@
 // The item index
 // The array itself
 
+// syntax
+
+// arr.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue)
+
 const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduce(myFunction);
 
